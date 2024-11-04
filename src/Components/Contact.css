@@ -1,0 +1,26 @@
+body  {
+    background-color: black;
+}
+
+.contact{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 100px 0 100px;
+align-items: center;
+font-size: x-large;
+color:cornflowerblue;
+}
+.contact_container{
+border:1px solid yellow;
+width:600 px;
+height: 200px;
+display: flex;
+flex-direction:column;
+align-items: center;
+justify-content: center;
+padding: 30px;
+margin-top: 20px;
+background-color:black
+}
+
