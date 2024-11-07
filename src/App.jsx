@@ -6,6 +6,7 @@ import Certification from './Components/Certification'
 import Projects from './Components/Projects'
 import Resume from './Components/Resume'
 import Contact from './Components/Contact'
+import About from './Components/About'
 
 const App = () => {
   return (
@@ -13,7 +14,8 @@ const App = () => {
 <BrowserRouter>
       <Header/>
       <Routes>
-        <Route path='/about' element={<Header/>}/>
+        
+        <Route path='/' element={<About/>}/>
         <Route path='/skills' element={<Skills/>}/>
         <Route path='/certification' element={<Certification/>}/>
         <Route path='projects' element={<Projects/>}/> 
@@ -23,6 +25,7 @@ const App = () => {
       
       </Routes>
       </BrowserRouter>
+      <h2>I am a developer</h2>
       </div>
 
   )

@@ -9,6 +9,7 @@ const Header=()=>{
           Rajaguru Portfolio
           </h2>
         <div className="header_right">
+        <Link to="about"><h4>About</h4></Link>
         <Link to="skills"><h4>Skills</h4></Link>
         <Link to="certification"><h4>Certification</h4></Link>
         <Link to="projects"><h4>Projects</h4></Link>
