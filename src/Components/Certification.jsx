@@ -7,18 +7,18 @@ export default function Certification() {
   return (
     <section>
       <div className="">
-        <div className=" flex py-24 gap-3">
+        <div className=" flex flex-wrap justify-center mb-2  y-24 gap-3">
           <div className="relative">
-            <img className="h-[300px] w-[500px]" src={FSD} />
+            <img className="h-[300px] " src={FSD} />
           </div>
           <div className="relative flex ">
-            <img className="h-[300px] w-[500px]" src={ReactJS} />
+            <img className="h-[300px] " src={ReactJS} />
           </div>
           <div className="relative  flex ">
-            <img className="h-[300px] w-[500px]" src={NodeJS} />
+            <img className="h-[300px] " src={NodeJS} />
           </div>
           <div className="relative flex ">
-            <img className="h-[300px] w-[500px]" src={MongoDB} />
+            <img className="h-[300px] " src={MongoDB} />
           </div>
         </div>
       </div>

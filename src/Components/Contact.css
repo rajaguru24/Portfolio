@@ -14,7 +14,6 @@ color:cornflowerblue;
 .contact_container{
 border:1px solid yellow;
 width:600 px;
-height: 200px;
 display: flex;
 flex-direction:column;
 align-items: center;
