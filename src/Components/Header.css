@@ -1,25 +1,23 @@
-.header{
-    display:flex;
+.app{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    color :white;
-    justify-content:space-evenly;
-
 }
-.header_left{
-    flex:0.4;
-    }
-.header_left > h2{
+
+    .header_left > h2{
 text-align: center;
 font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 letter-spacing: 1px ;
 padding:20px 0;
 }
+
 .header_right{
     display:flex;
     flex:0.6;
     justify-content:space-between;
     align-items:center;
 }
+
 .header_right > a > h4 {
     font-size:medium;
     cursor:pointer;
@@ -29,13 +27,89 @@ padding:20px 0;
     letter-spacing: 1px;
 
 }
+
 .header_right >a>h4:hover{
 transform:scale(1.06);
 background-color:blueviolet ;
 color: black;
 padding: 5px 20px;
-border-radius: 1px;
+border-radius: 2px;
 letter-spacing: 1px;
 cursor:pointer;
 }
 
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 10px 20px;
+
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .menu li {
+    margin: 0 15px;
+  }
+  
+  .hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    justify-content: end;
+    align-items: end;
+  }
+  
+  .hamburger .bar {
+    width: 25px;
+    height: 4px;
+    margin: 4px;
+    background-color: white;
+    justify-content: end;
+    align-items: end;
+  }
+  
+  /* Media queries */
+  @media (max-width: 768px) {
+    /* Hide the menu on mobile, show the hamburger icon */
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      background-color: #333;
+      width: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  
+    .menu.open {
+      display: flex;
+    }
+  
+    /* Show the hamburger icon */
+    .hamburger {
+      display: flex;
+      justify-content: end;
+    align-items: end;
+
+    }
+  }
+  
+  /* Desktop styles */
+  @media (min-width: 769px) {
+    /* Always show the menu on desktop */
+    .menu {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: none; /* Hide the hamburger on desktop */
+      justify-content: end;
+      align-items: end;
+    }
+  }
